@@ -5,6 +5,7 @@
 				<li>Ingredient: <%= ingredient.name %></li>
 				<li>Cost: <%= ingredient.cost %></li>
 				<li>Amount: <%= ingredient.amount %></li>
+				<li>Cost per Gram: $<%= (ingredient.cost * 1.0) / ingredient.amount %></li>
 			</ul>
 		</li>
 	<% end %>

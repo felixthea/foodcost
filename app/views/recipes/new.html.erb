@@ -1,0 +1,6 @@
+<form action="<%= recipes_url %>" method="post">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<label for="recipe_name">Recipe:</label>
+	<input type="text" id="recipe_name" name="recipe[name]">
+	<input type="submit" value="Add Recipe">
+</form>

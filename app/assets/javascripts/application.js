@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+	$('#num-of-units').on('blur', function(event){
+		$('#cost-per-unit').html($('#recipe-cost').html()/$(this).val())
+	})
+})
