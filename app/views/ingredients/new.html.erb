@@ -1,7 +1,7 @@
 <form action="<%=ingredients_url%>" method="post">
 	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"
 	<label for="ingredient_name">Ingredient</label>
-	<input type="text" id="ingredient_name" name="ingredient_nament[name]">
+	<input type="text" id="ingredient_name" name="ingredient[name]">
 	<br>
 	<label for="ingredient_amount">Amount (grams)</label>
 	<input type="number" id="ingredient_amount" name="ingredient[amount]">

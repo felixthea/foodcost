@@ -1,5 +1,3 @@
-<%= @recipe.name %> Show page
-<br>
 Total Cost: $<span id="recipe-cost"><%= recipe_cost %></span>
 <br>
 Number of Units: <input type="number" id="num-of-units">
@@ -15,8 +13,8 @@ Ingredients
 				<ul>
 					<li>Ingredient: <%= recipe_ingredient.ingredient.name %> <%= button_to "Remove Ingredient", recipe_ingredient_url(recipe_ingredient.id), method: :delete %> </li>
 					<li>Amount: <%= recipe_ingredient.amount %> grams</li>
-					<li>Cost/gram: $<%= cost_per_gram %> </li>
-					<li>Cost for Recipe: $<%= cost_per_gram * recipe_ingredient.amount %></li>
+					<!-- <li>Cost/gram: $<%= cost_per_gram %> </li> -->
+					<!-- <li>Cost for Recipe: $<%= cost_per_gram * recipe_ingredient.amount %></li> -->
 				</ul>
 			</li>
 		<% end %>
@@ -32,5 +30,5 @@ Ingredients
 	</select>
 	<label for="recipe_ingredient_amount">Amount:</label>
 	<input type="number" id="recipe_ingredient_amount" name="recipe_ingredient[amount]">
-	<input type="submit" value="Add Ingredient"></input>
+	<input type="submit" value="Add Ingredient to Recipe"></input>
 </form>
